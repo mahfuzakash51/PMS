@@ -61,6 +61,9 @@ Route::middleware(['auth'])->group(function () {
     Route::post('/orders/form/edit/update{id}', [OrderController::class, 'OrderEditFormsUpdate'])->name('orders.form.edit.update');
     
     Route::get('/invoicelist', [InvoiceController::class, 'invoices' ])->name('invoicelist');
+    Route::get('/invoice-view/{id}', [InvoiceController::class, 'invoiceManagerView' ])->name('manager.invoice.view');
+    Route::post('/invoice-payment/{id}', [InvoiceController::class, 'invoicePayment' ])->name('manager.invoice.payment');
+
 
     Route::get('/proposallist', [ProposalController::class, 'proposals' ])->name('proposallist');
     Route::post('/proposal-accept/{id}', [ProposalController::class, 'proposalAccept' ])->name('proposal.accept');

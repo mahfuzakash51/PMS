@@ -51,4 +51,27 @@ class InvoiceController extends Controller
         $items = json_decode($invoice->details);
         return view('user.invoice.invoice-view',compact('order','items','invoice'));
     }
+
+    public function invoiceManagerView($id) //invoice id
+    {
+        $invoice = Invoice::where('id', $id)->first();
+        $items = json_decode($invoice->details);
+        $order = $invoice->order;
+        return view('admin.invoice.invoice-view',compact('order','items','invoice'));
+    }
+
+    public function invoicePayment(Request $request, $id)  //invoice Id
+    {
+        $invoice = Invoice::where('id', $id)->first();
+        Invoice::where('id', $id)->update([
+            'payment_method' => $request->payment_method,
+            'payment_status' => 'YES'
+        ]);
+
+        Order::where('id', $invoice->order_id)->update([
+            'status'=>'COMPLETE'
+        ]);
+
+        return redirect()->back()->with('success', 'Invoice accepted successfully');
+    }
 }

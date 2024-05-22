@@ -31,4 +31,12 @@ class Order extends Model
     public function invoice() {
         return $this->hasOne(Invoice::class,'order_id', 'id');
     }
+
+    public function manager() {
+        return $this->hasOne(User::class, 'id', 'creator_id');
+    }
+
+    public function vendor() {
+        return $this->hasOne(User::class, 'id', 'user_id');
+    }
 }
