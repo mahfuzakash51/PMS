@@ -1,7 +1,7 @@
 @extends('user.layouts.app')
 
 @if (auth()->user()->role !== 'VENDOR')
-  <div class="card p-4 my-5 text-center text-danger"  style="margin-top: 200px;">
+  <div class="card p-4 text-center text-danger"  style="margin-top: 200px;">
         <b>Please login as vendor</b>
   </div>         
 @else
