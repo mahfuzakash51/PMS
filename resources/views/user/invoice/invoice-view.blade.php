@@ -1,5 +1,10 @@
 @extends('user.layouts.app')
 
+@if (auth()->user()->role !== 'VENDOR')
+  <div class="card p-4 my-5 text-center text-danger">
+        <b>Please login as vendor</b>
+  </div>         
+@else
 @section('content')
 <div class="container" style="margin-top: 100px;">
     <div class="text-center">
@@ -34,12 +39,6 @@
             
         </tbody>
     </table>
-        
-    
 </div>
-    
-
-
 @endsection
-
-
+@endif
