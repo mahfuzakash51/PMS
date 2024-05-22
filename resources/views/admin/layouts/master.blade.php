@@ -29,7 +29,17 @@
                     @endif
                     
 
-                    @yield('content')
+                    @if (auth()->user()->role === 'MANAGER')
+                        @yield('content')   
+                    @else
+                        <div class="card p-4 my-5 text-center text-danger">
+                            <b>Please login as manager</b>
+                        </div>   
+                        
+                        <div class="d-none">
+                            @yield('content') 
+                        </div>
+                    @endif
                   
                 </main>
                 <footer class="py-4 bg-light mt-auto">
