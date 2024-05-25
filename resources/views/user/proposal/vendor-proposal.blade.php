@@ -36,14 +36,16 @@
             </td>
             <td>{{ $proposalList->budget }} BDT</td>
             <td>{{ $proposalList->status }}</td>
-            <td class="d-flex" style="gap: 6px">
-              @if ($proposalList->status === 'SEND')
-                <form action="{{ route('vendor.proposal.remove',$proposalList->id) }}" method="post">
-                  @csrf
-                  <button class="btn btn-sm btn-danger" type="submit">Remove</button>
-                </form>    
-              @endif
-            </td>
+            <td class="">
+              <div class="d-flex justify-content-center" style="gap: 6px">
+                @if ($proposalList->status === 'SEND')
+                  <form action="{{ route('vendor.proposal.remove',$proposalList->id) }}" method="post">
+                    @csrf
+                    <button class="btn btn-sm btn-danger" type="submit">Remove</button>
+                  </form>    
+                @endif
+            </div>   
+          </td>
           </tr>
           @empty
           <tr>

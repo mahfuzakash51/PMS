@@ -18,7 +18,7 @@
                 
                 <div class="col-md-6">
                     <div class="mb-3">
-                        <label for="exampleFormControlInput1" class="form-label">Budget</label>
+                        <label for="exampleFormControlInput1" class="form-label">Budget (BDT)</label>
                         <input type="number" name="budget" class="form-control" id="exampleFormControlInput1" placeholder="" min="0">
                     </div>
                 </div>

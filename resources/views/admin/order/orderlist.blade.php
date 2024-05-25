@@ -37,20 +37,23 @@
         <td>{{ $order->description }}</td>
         <td>{{ $order->Category?  $order->Category->name : '--'}}</td>
         <td class="text-center">{{ $order->status }}</td>
-        <td class="d-flex" style="gap: 6px;">
-          @if ($order->status === 'OPEN')
-            <a class="btn btn-sm btn-success" href="{{ route('orders.edit',$order->id)}}">Edit</a>
-            <form action="{{ route('orders.delete',$order->id) }}" method="post">
-              @csrf
-              <button class="btn btn-sm btn-danger" type="submit">Delete</button>
-            </form>  
-          @endif
+        <td class="">
+          <dib class="d-flex justify-content-center" style="gap: 6px;">
+            @if ($order->status === 'OPEN')
+              <a class="btn btn-sm btn-success" href="{{ route('orders.edit',$order->id)}}">Edit</a>
+              <form action="{{ route('orders.delete',$order->id) }}" method="post">
+                @csrf
+                <button class="btn btn-sm btn-danger" type="submit">Delete</button>
+              </form>  
+            @endif
           
           <a class="btn btn-sm btn-info" href="{{route('orders.details', $order->id)}}">Details</a>
-          
+        </dib> 
         </td> 
-      </tr>   
+      </tr>
+     
     @empty
+     
       <tr>
         <td class="text-center" colspan="5">No data found!</td>
       </tr>

@@ -31,9 +31,9 @@
                 <div class="sb-nav-link-icon"><i class="fas fa-chart-area"></i></div>
                 Invoice                </a>
 
-                <a class="nav-link" href="{{route('reportlist')}}">
+                {{-- <a class="nav-link" href="{{route('reportlist')}}">
                     <div class="sb-nav-link-icon"><i class="fas fa-chart-area"></i></div>
-                    Report                </a>
+                    Report                </a> --}}
                
                 <div class="collapse" id="collapsePages" aria-labelledby="headingTwo" data-bs-parent="#sidenavAccordion">
                     <nav class="sb-sidenav-menu-nested nav accordion" id="sidenavAccordionPages">

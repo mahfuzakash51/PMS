@@ -36,6 +36,8 @@ Route::post('/proposal/{id}', [ProposalController::class, 'userProposalStore'])-
 Route::middleware(['auth'])->group(function () {
     Route::get('/my-order', [OrderController::class, 'vendorOrderList'])->name('vendor.orderList');
     Route::get('/profile', [ProfileController::class, 'profileView'])->name('vendor.profile');
+    Route::get('/vendor-profile-edit/{id}', [ProfileController::class, 'vendorEditForm'])->name('vendor.profile.edit');
+    Route::post('/vendor-profile-update/{id}', [ProfileController::class, 'vendorUpdateForm'])->name('vendor.profile.update');
     Route::get('/my-proposal', [ProposalController::class, 'vendorProposalList'])->name('vendor.proposal');
     Route::post('/my-proposal/remove/{id}', [ProposalController::class, 'removeVendorProposal'])->name('vendor.proposal.remove');
     Route::get('/invoice-form/{id}', [InvoiceController::class, 'invoiceForm'])->name('vendor.invoice.form');
@@ -51,6 +53,8 @@ Route::middleware(['auth'])->group(function () {
     
     Route::get('/home', [HomeController::class, 'index'])->name('home');
     Route::get('/Manager-profile', [ProfileController::class, 'ManagerProfileView'])->name('manager.profile');
+    Route::get('/Manager-profile-edit/{id}', [ProfileController::class, 'ManagerEditForm'])->name('manager.profile.edit');
+    Route::post('/Manager-profile-update/{id}', [ProfileController::class, 'ManagerUpdateForm'])->name('manager.profile.update');
     Route::get('/orderlist', [OrderController::class, 'orderslist'])->name('orderlist');
     Route::post('/create-order', [OrderController::class, 'createOrder'])->name('create-order-submit');
     Route::get('/orders/details/{id}', [OrderController::class, 'details'])->name('orders.details');

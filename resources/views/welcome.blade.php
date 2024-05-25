@@ -183,15 +183,7 @@
                   </div>
                 </a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link active show" data-bs-toggle="tab" data-bs-target="#features-tab-1">
-                  
-                  <div>
-                    <h4 class="d-none d-lg-block">Billing management</h4>
-                    
-                  </div>
-                </a>
-              </li>
+              
               <li class="nav-item">
                 <a class="nav-link active show" data-bs-toggle="tab" data-bs-target="#features-tab-1">
                   
@@ -301,8 +293,8 @@
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>Services</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+        <h2>Category</h2>
+        
       </div><!-- End Section Title -->
 
       <div class="container">
@@ -311,44 +303,38 @@
 
           <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
             <div class="service-item item-cyan position-relative">
-              <i class="bi bi-activity icon"></i>
+              
               <div>
-                <h3>Nesciunt Mete</h3>
-                <p>Provident nihil minus qui consequatur non omnis maiores. Eos accusantium minus dolores iure perferendis tempore et consequatur.</p>
-                <a href="service-details.html" class="read-more stretched-link">Learn More <i class="bi bi-arrow-right"></i></a>
+                <h3>Office Equipment</h3>
+                <p>Office equipment is materials or articles needed in in an office for the performance of office duties.</p>
+                
               </div>
             </div>
           </div><!-- End Service Item -->
 
           <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
             <div class="service-item item-orange position-relative">
-              <i class="bi bi-broadcast icon"></i>
               <div>
-                <h3>Eosle Commodi</h3>
-                <p>Ut autem aut autem non a. Sint sint sit facilis nam iusto sint. Libero corrupti neque eum hic non ut nesciunt dolorem.</p>
-                <a href="service-details.html" class="read-more stretched-link">Learn More <i class="bi bi-arrow-right"></i></a>
+                <h3>Educational Equipment</h3>
+                <p>Educational equipment refers to the tools and resources used to facilitate learning and teaching in a formal educational setting. These tools can include physical equipment, such as laboratory apparatus and audiovisual aids, as well as software and online</p>
               </div>
             </div>
           </div><!-- End Service Item -->
 
           <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
             <div class="service-item item-teal position-relative">
-              <i class="bi bi-easel icon"></i>
               <div>
-                <h3>Ledo Markt</h3>
-                <p>Ut excepturi voluptatem nisi sed. Quidem fuga consequatur. Minus ea aut. Vel qui id voluptas adipisci eos earum corrupti.</p>
-                <a href="service-details.html" class="read-more stretched-link">Learn More <i class="bi bi-arrow-right"></i></a>
+                <h3>Medical Equipment</h3>
+                <p>An article, instrument, apparatus or machine that is used in the prevention, diagnosis or treatment of illness or disease, or for detecting, measuring, restoring, correcting or modifying the structure or function of the body for some health purpose.</p>
               </div>
             </div>
           </div><!-- End Service Item -->
 
           <div class="col-lg-6" data-aos="fade-up" data-aos-delay="400">
             <div class="service-item item-red position-relative">
-              <i class="bi bi-bounding-box-circles icon"></i>
               <div>
-                <h3>Asperiores Commodi</h3>
-                <p>Non et temporibus minus omnis sed dolor esse consequatur. Cupiditate sed error ea fuga sit provident adipisci neque.</p>
-                <a href="service-details.html" class="read-more stretched-link">Learn More <i class="bi bi-arrow-right"></i></a>
+                <h3>Electronic Equipment</h3>
+                <p>Electronic Equipment means any equipment that operates electronically such as mobile phones, laptops, computers, printers, scanners, processing systems, cash registers, scales, testing or analysing equipment used in your business operations.</p>
               </div>
             </div>
           </div><!-- End Service Item -->
@@ -364,7 +350,7 @@
             </div>
           </div><!-- End Service Item --> --}}
 
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="600">
+          {{-- <div class="col-lg-6" data-aos="fade-up" data-aos-delay="600">
             <div class="service-item item-pink position-relative">
               <i class="bi bi-chat-square-text icon"></i>
               <div>
@@ -373,7 +359,7 @@
                 <a href="service-details.html" class="read-more stretched-link">Learn More <i class="bi bi-arrow-right"></i></a>
               </div>
             </div>
-          </div><!-- End Service Item -->
+          </div><!-- End Service Item --> --}}
 
         </div>
 
@@ -759,7 +745,7 @@
 
         <div class="row gy-4 mt-1">
           <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d48389.78314118045!2d-74.006138!3d40.710059!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a22a3bda30d%3A0xb89d1fe6bc499443!2sDowntown%20Conference%20Center!5e0!3m2!1sen!2sus!4v1676961268712!5m2!1sen!2sus" frameborder="0" style="border:0; width: 100%; height: 400px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            {{-- <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d48389.78314118045!2d-74.006138!3d40.710059!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a22a3bda30d%3A0xb89d1fe6bc499443!2sDowntown%20Conference%20Center!5e0!3m2!1sen!2sus!4v1676961268712!5m2!1sen!2sus" frameborder="0" style="border:0; width: 100%; height: 400px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> --}}
           </div><!-- End Google Maps -->
 
           {{-- <div class="col-lg-6">

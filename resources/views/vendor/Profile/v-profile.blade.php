@@ -4,6 +4,10 @@
 <div class="container" style="margin-top: 100px;">
 <h1>Vendor Information</h1>
 
+<div class="d-flex justify-content-center" style="gap: 6px;">
+  <a class="btn btn-sm btn-success" href="{{ route('vendor.profile.edit',auth()->id())}}">Edit</a>
+</div>
+
 <div class="text-center">
   <img src="{{ asset('assets/img/profile-vendor.png') }}" style="height: 80px" alt="img" >
 </div>
