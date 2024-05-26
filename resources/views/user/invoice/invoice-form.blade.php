@@ -14,8 +14,8 @@
               <tr>
                 <th scope="col">Item Name</th>
                 <th scope="col">Quantity</th>
-                <th scope="col">Unit Price</th>
-                <th scope="col">Total Price</th>
+                <th scope="col">Unit Price (BDT)</th>
+                <th scope="col">Total Price (BDT)</th>
               </tr>
             </thead>
             <tbody>

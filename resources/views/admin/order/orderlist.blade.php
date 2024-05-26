@@ -27,6 +27,7 @@
       <th style="width: 18%" >Category Name</th>
       <th class="text-center">Status</th>
       <th class="text-center">Action</th>
+      <th class="text-center">Create Time</th>
     </tr>
   </thead>
   <tbody>
@@ -38,7 +39,7 @@
         <td>{{ $order->Category?  $order->Category->name : '--'}}</td>
         <td class="text-center">{{ $order->status }}</td>
         <td class="">
-          <dib class="d-flex justify-content-center" style="gap: 6px;">
+          <div class="d-flex justify-content-center" style="gap: 6px;">
             @if ($order->status === 'OPEN')
               <a class="btn btn-sm btn-success" href="{{ route('orders.edit',$order->id)}}">Edit</a>
               <form action="{{ route('orders.delete',$order->id) }}" method="post">
@@ -48,7 +49,8 @@
             @endif
           
           <a class="btn btn-sm btn-info" href="{{route('orders.details', $order->id)}}">Details</a>
-        </dib> 
+          <td class="text-center"> {{$order->created_at}}</td>
+        </div> 
         </td> 
       </tr>
      

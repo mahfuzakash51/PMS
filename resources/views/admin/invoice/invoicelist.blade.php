@@ -8,6 +8,7 @@
       <th scope="col">ID</th>
       <th scope="col">Order Title</th>
       <th scope="col">Payment Status</th>
+      <th scope="col">Send Time</th>
       <th>Action</th>
     </tr>
   </thead>
@@ -19,6 +20,7 @@
         <th>{{$loop->index + 1}}</th>
         <td>{{ $invoice->order->title }}</td>
         <td>{{ $invoice->payment_status }}</td>
+        <td>{{ $invoice->created_at }}</td>
         <td>
           <a class="btn btn-sm btn-info" href="{{route('manager.invoice.view', $invoice->id)}}">View</a>
         </td>

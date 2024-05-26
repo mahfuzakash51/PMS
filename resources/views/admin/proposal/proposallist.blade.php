@@ -12,9 +12,11 @@
       <th style="width: 15%;">Order Title</th>
       <th style="width: 25%;">Description</th>
       <th style="width: 15%;">Vendor Info</th>
-      <th style="width: 15%;">Proposal Cost</th>
+      <th style="width: 10%;">Proposal Cost</th>
       <th style="width: 10%;">Status</th>
-      <th style="width: 15%;">Action</th>
+      <th class="width: 15% ">Create Time</th>
+      <th style="width: 10%;">Action</th>
+      
     </tr>
   </thead>
   <tbody>
@@ -31,6 +33,7 @@
       </td>
       <td>{{ $proposalList->budget }} BDT</td>
       <td>{{ $proposalList->status }}</td>
+      <td>{{$proposalList->created_at}}</td>
       <td class="">
         <div class="d-flex justify-content-center" style="gap: 6px">
           @if ($proposalList->status === 'SEND')
@@ -43,6 +46,7 @@
             @csrf
             <button class="btn btn-sm btn-danger" type="submit">Reject</button>
           </form> 
+          
          <div>    
         @endif
       </td>

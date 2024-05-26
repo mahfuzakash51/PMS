@@ -8,9 +8,16 @@
                 <div class="d-flex">
                     <h4><a href="{{ route('user.order.details',$order->id) }}">{{$order->title}}</a></h4>
                     <div class="ms-auto">
+                       
                         {{ $order->Category?  $order->Category->name : '--'}}
+                        <div>
+                            {{$order->created_at}}
+                        </div>
                     </div>
+                    
                 </div>
+                
+                
                 
                 <p>{{$order->description}}</p>
                 <div class="d-flex mb-4">

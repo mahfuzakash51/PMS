@@ -717,7 +717,7 @@
 
         <div class="row gy-4">
 
-          <div class="col-lg-6">
+          <div class="col-lg-4">
             <div class="info-item d-flex flex-column justify-content-center align-items-center" data-aos="fade-up" data-aos-delay="200">
               <i class="bi bi-geo-alt"></i>
               <h3>Address</h3>
@@ -725,7 +725,7 @@
             </div>
           </div><!-- End Info Item -->
 
-          <div class="col-lg-3 col-md-6">
+          <div class="col-lg-4 col-md-6">
             <div class="info-item d-flex flex-column justify-content-center align-items-center" data-aos="fade-up" data-aos-delay="300">
               <i class="bi bi-telephone"></i>
               <h3>Call Us</h3>
@@ -733,11 +733,11 @@
             </div>
           </div><!-- End Info Item -->
 
-          <div class="col-lg-3 col-md-6">
+          <div class="col-lg-4 col-md-6">
             <div class="info-item d-flex flex-column justify-content-center align-items-center" data-aos="fade-up" data-aos-delay="400">
               <i class="bi bi-envelope"></i>
               <h3>Email Us</h3>
-              <p>mahfuz1.cse@fmail.com</p>
+              <p>mahfuz1.cse@gmail.com</p>
             </div>
           </div><!-- End Info Item -->
 
